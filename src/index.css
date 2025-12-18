@@ -1,0 +1,219 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Sacred Journeys - Hajj & Umrah Design System
+   Spiritual, calm, trustworthy, and premium aesthetic
+   All colors in HSL format */
+
+@layer base {
+  :root {
+    /* Warm ivory/cream background */
+    --background: 40 33% 98%;
+    --foreground: 30 15% 20%;
+
+    /* Cards - slightly warmer than background */
+    --card: 40 30% 96%;
+    --card-foreground: 30 15% 20%;
+
+    --popover: 40 30% 96%;
+    --popover-foreground: 30 15% 20%;
+
+    /* Primary - Deep emerald green (Islamic sacred color) */
+    --primary: 158 35% 25%;
+    --primary-foreground: 40 33% 98%;
+
+    /* Secondary - Sand/beige tones */
+    --secondary: 35 25% 90%;
+    --secondary-foreground: 30 15% 25%;
+
+    /* Muted - Soft warm gray */
+    --muted: 35 15% 92%;
+    --muted-foreground: 30 10% 45%;
+
+    /* Accent - Muted gold */
+    --accent: 38 55% 55%;
+    --accent-foreground: 30 15% 15%;
+
+    /* Gold highlight for premium feel */
+    --gold: 38 55% 55%;
+    --gold-light: 40 50% 75%;
+    --gold-dark: 35 45% 40%;
+
+    /* Emerald variations */
+    --emerald: 158 35% 25%;
+    --emerald-light: 158 30% 35%;
+    --emerald-dark: 158 40% 18%;
+
+    /* Sand variations */
+    --sand: 35 30% 85%;
+    --sand-light: 38 25% 92%;
+    --sand-dark: 32 25% 70%;
+
+    --destructive: 0 65% 50%;
+    --destructive-foreground: 40 33% 98%;
+
+    --border: 35 20% 88%;
+    --input: 35 20% 88%;
+    --ring: 158 35% 25%;
+
+    --radius: 0.5rem;
+
+    /* Sidebar */
+    --sidebar-background: 40 30% 96%;
+    --sidebar-foreground: 30 15% 25%;
+    --sidebar-primary: 158 35% 25%;
+    --sidebar-primary-foreground: 40 33% 98%;
+    --sidebar-accent: 35 25% 90%;
+    --sidebar-accent-foreground: 30 15% 25%;
+    --sidebar-border: 35 20% 88%;
+    --sidebar-ring: 158 35% 25%;
+  }
+
+  .dark {
+    --background: 30 20% 8%;
+    --foreground: 40 25% 92%;
+
+    --card: 30 18% 12%;
+    --card-foreground: 40 25% 92%;
+
+    --popover: 30 18% 12%;
+    --popover-foreground: 40 25% 92%;
+
+    --primary: 158 35% 40%;
+    --primary-foreground: 30 20% 8%;
+
+    --secondary: 30 15% 18%;
+    --secondary-foreground: 40 25% 92%;
+
+    --muted: 30 15% 18%;
+    --muted-foreground: 35 15% 60%;
+
+    --accent: 38 50% 50%;
+    --accent-foreground: 30 20% 8%;
+
+    --gold: 38 50% 50%;
+    --gold-light: 40 45% 60%;
+    --gold-dark: 35 40% 35%;
+
+    --emerald: 158 35% 40%;
+    --emerald-light: 158 30% 50%;
+    --emerald-dark: 158 40% 30%;
+
+    --sand: 32 20% 25%;
+    --sand-light: 35 18% 30%;
+    --sand-dark: 30 15% 18%;
+
+    --destructive: 0 60% 45%;
+    --destructive-foreground: 40 25% 92%;
+
+    --border: 30 15% 20%;
+    --input: 30 15% 20%;
+    --ring: 158 35% 40%;
+
+    --sidebar-background: 30 18% 12%;
+    --sidebar-foreground: 40 25% 92%;
+    --sidebar-primary: 158 35% 40%;
+    --sidebar-primary-foreground: 30 20% 8%;
+    --sidebar-accent: 30 15% 18%;
+    --sidebar-accent-foreground: 40 25% 92%;
+    --sidebar-border: 30 15% 20%;
+    --sidebar-ring: 158 35% 40%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  /* Islamic geometric pattern overlay */
+  .pattern-overlay {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23c9a962' fill-opacity='0.08'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  /* Gradient overlays */
+  .gradient-spiritual {
+    background: linear-gradient(
+      135deg,
+      hsl(var(--emerald) / 0.9) 0%,
+      hsl(var(--emerald-dark) / 0.95) 100%
+    );
+  }
+
+  .gradient-gold {
+    background: linear-gradient(
+      135deg,
+      hsl(var(--gold)) 0%,
+      hsl(var(--gold-dark)) 100%
+    );
+  }
+
+  .gradient-sand {
+    background: linear-gradient(
+      180deg,
+      hsl(var(--sand-light)) 0%,
+      hsl(var(--background)) 100%
+    );
+  }
+
+  /* Text gradient for headings */
+  .text-gradient-gold {
+    background: linear-gradient(
+      135deg,
+      hsl(var(--gold)) 0%,
+      hsl(var(--gold-light)) 50%,
+      hsl(var(--gold)) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Premium shadows */
+  .shadow-spiritual {
+    box-shadow: 0 4px 20px -4px hsl(var(--emerald) / 0.15),
+                0 8px 40px -8px hsl(var(--emerald) / 0.1);
+  }
+
+  .shadow-gold {
+    box-shadow: 0 4px 20px -4px hsl(var(--gold) / 0.2),
+                0 8px 40px -8px hsl(var(--gold) / 0.15);
+  }
+
+  .shadow-soft {
+    box-shadow: 0 2px 10px -2px hsl(var(--foreground) / 0.08),
+                0 4px 20px -4px hsl(var(--foreground) / 0.05);
+  }
+
+  .shadow-elevated {
+    box-shadow: 0 8px 30px -8px hsl(var(--foreground) / 0.12),
+                0 16px 60px -16px hsl(var(--foreground) / 0.08);
+  }
+}
+
+@layer utilities {
+  /* Animation delays */
+  .animation-delay-100 { animation-delay: 100ms; }
+  .animation-delay-200 { animation-delay: 200ms; }
+  .animation-delay-300 { animation-delay: 300ms; }
+  .animation-delay-400 { animation-delay: 400ms; }
+  .animation-delay-500 { animation-delay: 500ms; }
+  .animation-delay-600 { animation-delay: 600ms; }
+  .animation-delay-700 { animation-delay: 700ms; }
+  .animation-delay-800 { animation-delay: 800ms; }
+}
