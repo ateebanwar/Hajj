@@ -51,18 +51,24 @@ const Hero = () => {
 
               <div className="absolute inset-0 pattern-overlay opacity-30" />
 
-              <div className="relative z-10 container mx-auto px-4 lg:px-8 text-center pb-32 md:pb-24 mt-8">
+              <div className="relative z-10 container mx-auto px-4 lg:px-8 text-center pb-44 md:pb-52 pt-28 md:pt-36 lg:pt-44">
                 <div className="max-w-4xl mx-auto">
-                  <p className="text-gold-light text-xl md:text-3xl lg:text-3xl font-arabic font-bold mb-10 md:mb-12 opacity-0 animate-fade-in leading-relaxed">
+                  <p className="text-gold-light text-lg md:text-2xl font-arabic font-bold mb-4 md:mb-5 opacity-0 animate-fade-in leading-relaxed">
                     {slide.bismillah}
                   </p>
 
-                  <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-serif font-semibold text-primary-foreground mb-4 md:mb-6 leading-tight opacity-0 animate-fade-in-up animation-delay-200">
+                  {slide.translation && (
+                    <p className="text-gold-light/90 text-base md:text-lg lg:text-xl font-urdu mb-6 md:mb-8 opacity-0 animate-fade-in animation-delay-100 leading-relaxed max-w-3xl mx-auto">
+                      {slide.translation}
+                    </p>
+                  )}
+
+                  <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-serif font-semibold text-primary-foreground mb-4 md:mb-5 leading-tight opacity-0 animate-fade-in-up animation-delay-200">
                     {slide.headingPre}{" "}
                     <span className="text-gradient-gold">{slide.headingSpan}</span>
                   </h1>
 
-                  <p className="text-base md:text-lg lg:text-xl xl:text-2xl text-primary-foreground/90 mb-6 md:mb-8 max-w-2xl mx-auto leading-relaxed opacity-0 animate-fade-in-up animation-delay-400">
+                  <p className="text-sm md:text-base lg:text-lg xl:text-xl text-primary-foreground/90 mb-6 md:mb-8 max-w-2xl mx-auto leading-relaxed opacity-0 animate-fade-in-up animation-delay-400">
                     {slide.subheading}
                   </p>
 
@@ -88,7 +94,7 @@ const Hero = () => {
         <CarouselNext className="right-4 z-30" />
       </Carousel>
 
-      <div className="absolute bottom-24 md:bottom-20 left-1/2 -translate-x-1/2 text-center z-20">
+      <div className="absolute bottom-[89px] md:bottom-[55px] left-1/2 -translate-x-1/2 text-center z-20">
         <div className="flex flex-wrap justify-center gap-6 md:gap-8 opacity-0 animate-fade-in animation-delay-800">
           {config.hero.trustBadges.map((badge, index) => (
             <div key={index} className="text-center">
@@ -101,7 +107,7 @@ const Hero = () => {
 
       <button
         onClick={() => handleScroll("#about")}
-        className="absolute bottom-4 md:bottom-8 left-1/2 -translate-x-1/2 text-primary-foreground/70 hover:text-primary-foreground transition-colors animate-float z-30"
+        className="absolute bottom-[3px] left-1/2 -translate-x-1/2 text-primary-foreground/70 hover:text-primary-foreground transition-colors animate-float z-30 p-0 leading-none"
         aria-label="Scroll down"
       >
         <ChevronDown className="w-6 h-6 md:w-8 md:h-8" />

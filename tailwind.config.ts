@@ -17,6 +17,7 @@ export default {
         sans: ['DM Sans', 'system-ui', 'sans-serif'],
         serif: ['Playfair Display', 'Georgia', 'serif'],
         arabic: ['Scheherazade New', 'serif'],
+        urdu: ['Jameel Noori Nastaleeq', 'serif'],
       },
       colors: {
         border: "hsl(var(--border))",

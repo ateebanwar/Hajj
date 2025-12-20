@@ -46,6 +46,7 @@ const DEFAULT_CONFIG = {
             {
                 "image": "/assets/hero-kaaba.jpg",
                 "bismillah": "بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ",
+                "translation": "اللہ کے نام سے جو بہت مہربان نہایت رحم والا ہے",
                 "headingPre": "Begin Your",
                 "headingSpan": "Sacred Journey",
                 "subheading": "Experience the spiritual pilgrimage of a lifetime with trusted guidance, premium services, and complete peace of mind."
@@ -53,6 +54,7 @@ const DEFAULT_CONFIG = {
             {
                 "image": "/assets/lucid-origin_A_serene_and_emotional_spiritual_view_of_Masjid_an-Nabawi_in_Madinah_during_suns-0.jpg",
                 "bismillah": "إِنَّ الصَّلَاةَ كَانَتْ عَلَى الْمُؤْمِنِينَ كِتَابًا مَّوْقُوتًا",
+                "translation": "بے شک نماز مومنوں پر مقررہ وقتوں پر فرض ہے",
                 "headingPre": "Spiritual",
                 "headingSpan": "Enlightenment",
                 "subheading": "Join thousands of pilgrims in the most sacred journey, guided by experienced scholars and modern comfort."
@@ -60,6 +62,7 @@ const DEFAULT_CONFIG = {
             {
                 "image": "/assets/lucid-origin_A_majestic_cinematic_view_of_the_Abraj_Al-Bait_Clock_Tower_in_Makkah_at_dusk_tow-0.jpg",
                 "bismillah": "وَمَن يَتَّقِ اللَّهَ يَجْعَل لَّهُ مَخْرَجًا",
+                "translation": "اور جو اللہ سے ڈرتا ہے، اللہ اس کے لیے نکلنے کی کوئی راہ بنا دیتا ہے",
                 "headingPre": "Peace and",
                 "headingSpan": "Serenity",
                 "subheading": "Find inner peace through the rituals of Hajj and Umrah, with all arrangements handled professionally."
@@ -67,6 +70,7 @@ const DEFAULT_CONFIG = {
             {
                 "image": "/assets/lucid-origin_A_breathtaking_ultra-realistic_spiritual_scene_of_Masjid_al-Haram_in_Makkah_at_g-0.jpg",
                 "bismillah": "اللَّهُمَّ إِنِّي أَسْأَلُكَ الْهُدَى وَالتُّقَى وَالْعَفَافَ وَالْغِنَى",
+                "translation": "اے اللہ! میں تجھ سے ہدایت، تقویٰ، پاکدامنی اور تونگری کا سوال کرتا ہوں",
                 "headingPre": "Your Journey",
                 "headingSpan": "Starts Here",
                 "subheading": "Comprehensive Hajj and Umrah services tailored to your needs, ensuring a memorable and blessed experience."
